@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        body{
+            
+            font-family: monospace;
+            font-size: 1.5em;
+
+        }
+        h1{
+            text-align: center;
+            color: purple;
+        }
+        p{
+            font-weight: bold;
+        }
+        h2{
+            color: red;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .colors-at-center{
+           display: flex; 
+           justify-content: center;
+        }
+        .colors-at-end{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .colors-has-spacearound{
+            display: flex;
+            justify-content: space-around;
+        }
+       
+        ul li:first-child{
+            color: green;
+        }
+        ul li:nth-child(2){
+            color: red;
+        }
+        ul li:last-child{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS FLEXBOX</h1>
+    <div class="challenge-one">
+        <span>
+            <h2>Challenge 1</h2>
+            <p>Center align these colors using Flexbox</p>
+        </span>
+        <ul class="colors-at-center">
+            <li>Green</li>
+            <li>Red</li>
+            <li>Yellow</li>
+        </ul>
+    </div>
+    <div class="challenge-two">
+        <span>
+            <h2>Challenge 2</h2>
+            <p>Right align these colors using flexbox</p>
+        </span>
+        <ul class="colors-at-end">
+            <li>Green</li>
+            <li>Red</li>
+            <li>Yellow</li>
+        </ul>
+    </div>
+    <div class="challenge-three">
+       <span>
+        <h2>Challenge 3</h2>
+        <p>Center align these colors with equal space between each of them</p>
+       </span>
+        <ul class="colors-has-spacearound">
+            <li>Green</li>
+            <li>Red</li>
+            <li>Yellow</li>
+        </ul>
+    </div>
+
+</body>
+</html>
