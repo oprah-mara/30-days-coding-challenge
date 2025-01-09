@@ -3,18 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Table</title>
     <style>
-        table{
+        .styled-table{
             border-collapse: collapse;
-            border: 2px solid red;
+            /* white-space: 1rem; */
+            border-bottom: 2px solid rgb(1,152,121);
             width: 100%;
+            height: 12em;
             text-align: center;
+            font-family: "Poppins", serif;
+            border-radius: 100px;
+            
         }
+       
+        .styled-table thead tr{
+            background-color: rgb(1,152,121);
+            color: white;
+            font-size: 1rem;
+            height: 3rem;
+            
+            
+        }
+        .styled-row tr:nth-child(2){
+            color:  rgb(1,152,121);
+            background-color: rgb(243,243,243);
+        }
+
+        
     </style>
 </head>
 <body>
-    <h1>Weekly schedule</h1>
+    <!-- <h1>Weekly schedule</h1>
     <table>
         <caption>class schedule</caption>
         <thead>
@@ -29,11 +52,11 @@
         </thead>
         <tbody>
             <tr>
-                <td>Morning</td>
+                <td rowspan="1">Morning</td>
                 <td>Mathematics</td>
                 <td>English</td>
                 <td>Java</td>
-                <td>CSS</td>
+                <td rowspan="2">CSS</td>
                 <td>JavaScript</td>
             </tr>
             <tr>
@@ -57,7 +80,86 @@
             </tr>
         </tbody>
     </table>
+     -->
+
     
-    
+     <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody class="styled-row">
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>dcode</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+     </table>
+     <table>
+        <caption>Promotion Plans</caption>
+        <thead>
+            <tr>
+                <th scope="col">COMPARE ALL PLANS</th>
+                <th>ENTERPRISE</th>
+                <th>ADVANCE</th>
+                <th>STARTER</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Following  Month</td>
+                <td>$900</td>
+                <td>$700</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Delivery Time Frame</td>
+                <td>3-6 Months</td>
+                <td>3-6 Months</td>
+                <td>3-6 Months</td>
+            </tr>
+            <tr>
+                <td>Support 24/7</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Certifate</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>Guranteed Keywords Ranking  in First page of Google</td>
+                <td>28</td>
+                <td>20</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td colspan=""><button>CHOOSE PLAN</button></td>
+                <td><button>CHOOSE PLAN</button></td>
+                <td><button>CHOOSE PLAN</button></td>
+            </tr>
+        </tbody>
+     </table>
 </body>
 </html>
