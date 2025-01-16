@@ -8,6 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Table</title>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         .styled-table{
             border-collapse: collapse;
             /* white-space: 1rem; */
@@ -25,15 +30,73 @@
             color: white;
             font-size: 1rem;
             height: 3rem;
-            
-            
         }
         .styled-row tr:nth-child(2){
             color:  rgb(1,152,121);
             background-color: rgb(243,243,243);
         }
 
+
+        .promotion-table{
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+          height: 60vh;
+          width: 100%;
+          text-align: center;
+        }
+        .promotion-thead th {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 1em;
+            color: white;
+        }
+        .promotion-thead th:nth-child(1){
+            background-color: rgb(241,241,241);
+            color: rgb(83,91,100);
+        }
+        .promotion-thead th:nth-child(2){
+            background-color: rgb(83,91,100);
+        }
+        .promotion-thead th:nth-child(3){
+            background-color: rgb(230,80,106);
+        }
+        .promotion-thead th:nth-child(4){
+            background-color: rgb(112,206,104);
+        }
+        .promotion-tbody{
+            font-size: 1rem; 
+            color: rgb(83,91,100); 
+        }
+        .promotion-tbody tr:first-child td:nth-child(2){
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .promotion-tbody tr:first-child td:nth-child(3), 
+        .promotion-tbody tr:first-child td:nth-child(4){
+            color:  rgb(230,80,106);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .promotion-tbody tr:first-child td:nth-child(4){
+            color: rgb(112,206,104);
+        }
+        .promotion-tbody tr td:nth-child(3){
+            background-color: rgb(245,247,250);
+        }
+        button{
+            padding: 1.5rem;
+            background-color: white;
+            border: 1px solid  rgb(83,91,100);
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        tr td:nth-child(3) button{
+            border: 1px solid red;
+            background-color:  rgb(230,80,106);
+            color: white;
+        }
         
+
+
     </style>
 </head>
 <body>
@@ -113,17 +176,18 @@
             </tr>
         </tbody>
      </table>
-     <table>
-        <caption>Promotion Plans</caption>
-        <thead>
+
+     <table class="promotion-table">
+        <caption id="text-caption">Promotion Plans</caption>
+        <thead class="promotion-thead">
             <tr>
-                <th scope="col">COMPARE ALL PLANS</th>
+                <th>COMPARE ALL PLANS</th>
                 <th>ENTERPRISE</th>
                 <th>ADVANCE</th>
                 <th>STARTER</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody class="promotion-tbody">
             <tr>
                 <td>Following  Month</td>
                 <td>$900</td>
@@ -143,7 +207,7 @@
                 <td>-</td>
             </tr>
             <tr>
-                <td>Certifate</td>
+                <td>Certificate</td>
                 <td>-</td>
                 <td>-</td>
                 <td>-</td>
@@ -155,7 +219,7 @@
                 <td>18</td>
             </tr>
             <tr>
-                <td colspan=""><button>CHOOSE PLAN</button></td>
+                <td><button>CHOOSE PLAN</button></td>
                 <td><button>CHOOSE PLAN</button></td>
                 <td><button>CHOOSE PLAN</button></td>
             </tr>
