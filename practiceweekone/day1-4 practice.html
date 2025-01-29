@@ -1,39 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html basics</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Shadow Example</title>
+  <style>
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      background-color: lightblue;
+
+    }
+
+    .outer-shadow {
+      box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+      
+    }
+
+    .inner-shadow {
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3), 
+            inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+
+    }
+
+    p{
+      color: black;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      font-weight: 700;
+      font-style:oblique ;
+      line-height: 18px;
+      text-transform: capitalize;
+      text-align: center;
+      letter-spacing: 3px;
+      
+    }
+
+
+  </style>
 </head>
 <body>
-    <h1>HTML BASICS</h1>
-    <div>
-        <h2>Name</h2>
-        <p>My name is Amarachi opara and you?</p>
-    </div>
-    <div>
-        <h3>This is an unordered list</h3>
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-        </ul>
-    </div>
-    <div>
-        <h4>This is an ordered list</h4>
-        <ol>
-            <li>item 1</li>
-            <li>item 2</li>
-        </ol>
-    </div>
-    <div>
-        <h5>This is a link to websites</h5>
-        <a href="https://www.apple.com/">apple.com</a>
-        <a href="https://www.shecodes.io/learn/cohorts/1469/units/25/challenges/271/solution">shecodes.com</a>
-    </div>
-    <div>
-        <h6>These are images</h6>
-        <img src="https://www.google.com/imgres?q=images&imgurl=https%3A%2F%2Ffps.cdnpk.net%2Fimages%2Fhome%2Fsubhome-ai.webp%3Fw%3D649%26h%3D649&imgrefurl=https%3A%2F%2Fwww.freepik.com%2Fimages&docid=u1zAUGNbMI4p2M&tbnid=_hvsmLnL5x5NVM&vet=12ahUKEwjfwr2poYqKAxXjnokEHc3vHtsQM3oECHsQAA..i&w=649&h=434&hcb=2&itg=1&ved=2ahUKEwjfwr2poYqKAxXjnokEHc3vHtsQM3oECHsQAA" alt="image">
-    </div>
-    
+  <h1>Box Shadow Examples</h1>
+  <div class="box outer-shadow">Outer Shadow</div>
+  <div class="box inner-shadow">Inner Shadow</div>
+
+  <h2>css properties</h2>
+  <p>This is css properties practies</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYYo5t91q-5NLtEtMwmFqmo2OLqQZRIA0Xw&s" alt="img">
+ 
 </body>
 </html>
