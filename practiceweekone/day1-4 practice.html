@@ -3,51 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Box Shadow Example</title>
+  <script src="https://kit.fontawesome.com/b8c23fd941.js" crossorigin="anonymous"></script>
+  <title>Profile page</title>
   <style>
-    .box {
-      width: 200px;
-      height: 100px;
-      margin: 20px;
-      background-color: lightblue;
-
-    }
-
-    .outer-shadow {
-      box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
-      
-    }
-
-    .inner-shadow {
-        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3), 
-            inset 5px 5px 15px rgba(0, 0, 0, 0.5);
-
-    }
-
-    p{
-      color: black;
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Courier New', Courier, monospace;
-      font-size: 16px;
-      font-weight: 700;
-      font-style:oblique ;
-      line-height: 18px;
-      text-transform: capitalize;
-      text-align: center;
-      letter-spacing: 3px;
-      
     }
+    .top-half{
+      background-color: rgb(254,78,137);
+    }
+    .Profile-container{
+      background-color: rgb(255,255,255);
+      border: 2px solid red;
+      width: calc(100% - 80px);
+      height: 100%;
+      border-radius: 10px;
+    }
+    .Profile-header{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .Profile-header p{
+      font-size: calc(1rem);
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: calc(.3rem);
+    }
+    .Profile-header p:first-child{
+      color:  rgb(254,78,137);
+    }
+    .Profile-header p:last-child{
+      color: rgb(231,156,124);
+    }
+    .Profile-image{
+      background-color: rgb(255,255,255);
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .Profile-image img{
+      width:60%;
+      height: 50%;
+      border-radius: 100%;
+    }
+    .Profile-body{
+      margin: 50px;
+      border: 1px solid red;
+    }
+
 
 
   </style>
 </head>
 <body>
-  <h1>Box Shadow Examples</h1>
-  <div class="box outer-shadow">Outer Shadow</div>
-  <div class="box inner-shadow">Inner Shadow</div>
+      <div class="top-half"></div>
 
-  <h2>css properties</h2>
-  <p>This is css properties practies</p>
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtYYo5t91q-5NLtEtMwmFqmo2OLqQZRIA0Xw&s" alt="img">
- 
+      <div class="Profile-container">
+
+        <div class="Profile-header">
+          <p><i class="fa-solid fa-user-group"></i> Connect</p>
+          <div class="Profile-image">
+            <img src="https://media.istockphoto.com/id/1394440950/photo/natural-view-cosmos-filed-and-sunset-on-garden-background.jpg?s=612x612&w=0&k=20&c=eBnRobwsk2w_9MqM6bnXukIia5j-ayuMS0PeB6GHN0E=" alt="image">
+          </div>
+          <p><i class="fa-solid fa-comment-dots"></i>Message </p>
+        </div>
+
+        <div class="Profile-body">
+          <div class="Profile-info">
+            <h2>Amarachi Opara</h2>
+            <p>New York, United States</p>
+          </div>
+
+          <div class="Profile-details">
+            <p>Student</p>
+            <p>Data Scientist - Front-End Developer</p>
+          </div>
+
+          <div class="Profile-stats">
+            <p>65<span class="">Friends</span></p>
+            <p>43<span class="">Photos</span></p>
+            <p>21<span class="">Comments</span></p>
+          </div>
+          <button>Show more</button>
+        </div> 
+      </div>
+
+      <div class="bottom-half"></div>
 </body>
 </html>
