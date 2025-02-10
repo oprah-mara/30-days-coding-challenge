@@ -11,7 +11,6 @@
   <style>
     *{
       margin: 0;
-      padding: 0;
       box-sizing: border-box;
       font-family:"Poppins", serif;
     }
@@ -21,6 +20,7 @@
     .Profile-container{
       background-color: rgb(255,255,255);
       border: 2px solid red;
+      box-shadow: 2px 2px 5px 5px  rgb(254,78,137);
       width: calc(100% - 80px);
       height: 100%;
       border-radius: 10px;
@@ -30,7 +30,6 @@
       display: flex;
       padding: 2rem;
       justify-content: center;
-     border: 1px solid red;
     }
     
     .Profile-header p{
@@ -59,21 +58,49 @@
     }
     .Profile-body{
       text-align: center;
-      border: 1px solid red;
       margin-top: 2rem;
-      color: rgb(111,110,109);
-     
+      padding: 2rem;
+      line-height: 2rem;
+    }
+    .Profile-info p{
+      font-size: .9rem;
+      color: gray;
+    }
+    .Profile-details{
+      padding-top: 1rem;
+      color: grey;
+    }
+    .Profile-stats{
+      display: flex;
+      justify-content: center;
+    }
+    .Profile-stats p{
+      padding: 1rem;
+      color: grey;
+    }
+    .stats-numbers{
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: rgb(55, 52, 52);
     }
     button{
-      padding: 1.5rem;
+      padding: 1rem;
+      margin: 1rem;
       font-size: 1rem;
       background-color: rgb(254,78,137);
       color: white;
       border: 1px solid rgb(254,78,137);
       border-radius: 30px 10px;
       font-weight: 400;
-     
+      cursor: pointer;
     }
+    button:hover{
+      color:  rgb(254,78,137);
+      background-color: white;
+      border: 2px solid  rgb(254,78,137);
+      transition: all 50ms ease-in-out;
+    }
+   
 
 
 
@@ -104,9 +131,9 @@
           </div>
 
           <div class="Profile-stats">
-            <p>65<span class="">Friends</span></p>
-            <p>43<span class="">Photos</span></p>
-            <p>21<span class="">Comments</span></p>
+            <p><span class="stats-numbers">65</span> <br> Friends</p>
+            <p><span class="stats-numbers">43</span> <br> Photos</p>
+            <p><span class="stats-numbers">21</span> <br> Comments</p>
           </div>
           <button>Show more</button>
         </div> 
