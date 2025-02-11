@@ -15,16 +15,21 @@
       font-family:"Poppins", serif;
     }
     .top-half{
-      background-color: rgb(254,78,137);
+      /* background-color: rgb(254,78,137);
+      height: 50vh; */
+    }
+    .bottom-half{
+      height: 50vh;
+      /* background-color: coral; */
     }
     .Profile-container{
       background-color: rgb(255,255,255);
       border: 2px solid red;
       box-shadow: 2px 2px 5px 5px  rgb(254,78,137);
       width: calc(100% - 80px);
-      height: 100%;
       border-radius: 10px;
       margin: auto;
+      max-width: fit-content;
     }
     .Profile-header{
       display: flex;
@@ -55,6 +60,8 @@
     .Profile-image img{
       width:50%;
       border-radius: 100%;
+      object-fit: cover;
+      box-shadow: 1px 1px 10px 3px  rgb(254,78,137);
     }
     .Profile-body{
       text-align: center;
@@ -89,7 +96,7 @@
       font-size: 1rem;
       background-color: rgb(254,78,137);
       color: white;
-      border: 1px solid rgb(254,78,137);
+      border: 2px solid rgb(254,78,137);
       border-radius: 30px 10px;
       font-weight: 400;
       cursor: pointer;
@@ -97,13 +104,8 @@
     button:hover{
       color:  rgb(254,78,137);
       background-color: white;
-      border: 2px solid  rgb(254,78,137);
       transition: all 50ms ease-in-out;
     }
-   
-
-
-
   </style>
 </head>
 <body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>weather</title>
+    <style>
+        *{
+            font-family: "Poppins", serif;
+            /* margin: 0; */
+        }
+        .container{
+            text-align: center;
+            border: 1px solid red;
+            
+
+        }
+        
+        h1{
+            color: rgb(26,100,214);
+            font-size: 2.5rem;
+            border: 1px solid red;
+
+        }
+        ul{
+            list-style: none;
+            margin-right: 2rem;
+        }
+        ul:hover{
+            background-color: rgb(255,251,239);
+        }
+        ul li:first-child{
+            color: black;
+            font-weight: 600;
+            font-size: calc(1.2rem);
+        }
+        h2{
+            font-size: 1.3rem;
+            margin: 0;
+            border: 1px solid red;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="head-container">
+            <h1><span id="header-emoji">🌤</span><br>
+            Currently 21° in Tokyo </h1>
+            <h2>13°<span id="header-temperature"> / 23°</span></h2>
+        </div>
+        <div class="body-container">
+            <ul class="list-container">
+                <li>🌧Tomorrow</li>
+                <li>10°<span>/ 22° </span></li>
+            </ul>
+            <ul class="list-container">
+                <li>🌥 Saturday</li>
+                <li>15° <span>/ 17°</span></li>
+            </ul>
+            <ul class="list-container">
+                <li>☀️ Sunday</li>
+                <li>25° <span>/ 28°</span</li>
+            </ul>
+        </div>
+        <div class="footer-container">
+            <button>Change City</button>
+            <p>Coded by Amarachi Opara</p>
+        </div>
+    </div>    
+</body>
+</html>
